@@ -370,6 +370,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe-box">
+                <p class="subscribe-txt">Підпишіться на розсилку</p>
+                <label class="subscribe-label">
+                    <input class="subscribe-input" type="text" name="subscribe" placeholder="E-mail" />
+                </label>
+                <button class="subscribe-btn" type="submit">Підписатися
+                    <svg class="subscribe-icon" width="24" height="24">
+                        <use href="./images/icons.svg#send"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </footer>
 
@@ -381,6 +392,45 @@
                     <use href="./images/icons.svg#close-btn"></use>
                 </svg>
             </button>
+            <form class="service-form">
+                <strong class="service-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+                <div class="service-form-group" role="group">
+                    <label class="service-form-label">
+                        <span class="service-form-text">Ім'я</span>
+                        <input class="service-form-input" type="text" name="user-name" required />
+                        <svg class="service-form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#name"></use>
+                        </svg>
+                    </label>
+                    <label class="service-form-label">
+                        <span class="service-form-text">Телефон</span>
+                        <input class="service-form-input" type="tel" name="user-phone" required minlength="12" maxlength="12" />
+                        <svg class="service-form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#telephone"></use>
+                        </svg>
+                    </label>
+                    <label class="service-form-label">
+                        <span class="service-form-text">Пошта</span>
+                        <input class="service-form-input" type="email" name="user-email" required />
+                        <svg class="service-form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#mail"></use>
+                        </svg>
+                    </label>
+                    <label class="service-form-label">
+                        <span class="service-form-text">Коментар</span>
+                        <textarea class="service-form-commentary" name="feedback" rows="5" placeholder="Введіть текст"></textarea>
+                    </label>
+                </div>
+                    <label class="service-form-agreement">
+                        <input class="service-form-checkbox visually-hidden" type="checkbox" name="acception" value="accept" />
+                        <svg class="agreement-icon" width="16" height="15">
+                            <use class="agreement-icon-checked" href="./images/icons.svg#check-icon"></use>
+                            <use class="agreement-icon-unchecked" href="./images/icons.svg#check-frame"></use>
+                        </svg>
+                        <span class="agreement-desc">Погоджуюся з розсилкою та приймаю <a href="" class="service-form-link link" target="_blank" rel="noopener noreferrer">Умови договору</a> </span>
+                    </label>
+                    <button class="service-form-btn" type="submit">Відправити</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
